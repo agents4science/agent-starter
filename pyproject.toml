@@ -1,0 +1,17 @@
+[project]
+name = "course-kit"
+version = "0.1.0"
+description = "Course plumbing for CMSC 35370: gateway client and trace sessions"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "opentelemetry-sdk",
+    "opentelemetry-exporter-otlp-proto-http",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["course_kit"]
